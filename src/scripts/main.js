@@ -58,6 +58,10 @@ formButton.addEventListener('click', (e) => {
     pushNotification('Error', 'Please enter full name.', 'error');
 
     return;
+  } else if (position.length === 0) {
+    pushNotification('Error', 'Please enter position.', 'error');
+
+    return;
   } else if (age < 18 || age > 90) {
     pushNotification('Error', 'Please enter valid age.', 'error');
 
