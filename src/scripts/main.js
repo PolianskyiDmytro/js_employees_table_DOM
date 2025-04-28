@@ -198,11 +198,12 @@ tableBody.addEventListener('click', (e) => {
 
 tableBody.addEventListener('dblclick', (e) => {
   const cell = e.target.closest('td');
-  const cellText = cell.textContent;
 
   if (!cell) {
     return;
   }
+
+  const cellText = cell.textContent;
 
   const existingInput = tableBody.querySelector('.cell-input');
 
